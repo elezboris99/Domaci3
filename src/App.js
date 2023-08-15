@@ -51,7 +51,7 @@ function App() {
     // eslint-disable-next-line
     data.map((stavka) => {
       if (stavka.id === id) {
-        if (stavka.metacriticScore > 0) {
+        if (stavka.metacriticScore === 1) {
           stavka.metacriticScore = stavka.metacriticScore - 1;
           const a = cartNum - 1;
           setCartNum(a);
