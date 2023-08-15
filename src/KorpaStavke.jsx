@@ -1,29 +1,23 @@
 import React from 'react'
-import { FcDislike, FcLike } from "react-icons/fc";
 
 
-const Stavka = ({ stavka , onAdd, onRemove}) => {
+
+const KorpaStavke = ({ stavka}) => {
 
 
   return (
-    <div className="Stavka">
-      <div className="game-info">
+    <div className="StavkaKorpa">
+      <div className="game-info" >
         <h4 className="StavkaNaslov">{stavka.title}</h4>
         <p>{"ID: "+ stavka.id}</p>
         <p>{"Popust: " + parseFloat(stavka.savings).toFixed(2) + "%"}</p>
         <p>{"Ocena: " + stavka.dealRating}</p>
         <p className="StavkaCena">{"Cena: " + stavka.salePrice + "$  "}<s> {stavka.normalPrice + "$"} </s></p>
 <p>{(stavka.metacriticScore!==1?0:stavka.metacriticScore)===0?"Ceka na izbor":"Izabran proizvod"}</p>
-        <button className="btn" onClick={(()=>onAdd(stavka.id))}>
-          <FcLike />
-        </button>
-        <button className="btn" onClick={()=>onRemove(stavka.id)}>
-          <FcDislike />
-        </button>
-
+<p>Steam ID: {stavka.steamAppID!==null?stavka.steamAppID:"Igra nije dostupna na Steam platformi, pogledajte na nekoj drugoj platformi za kupovinu igrica."}</p>
       </div>
     </div>
   )
 }
 
-export default Stavka
+export default KorpaStavke

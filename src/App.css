@@ -7,7 +7,7 @@
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  height: 300px;
+  height: 350px;
   width: 200px;
   margin-right: 10px;
   margin: 10px;
@@ -26,7 +26,7 @@
   height: 35px;
   width: 35px;
 }
-h2{
+h4{
 min-height: 115px;
 
 }
@@ -54,3 +54,40 @@ min-height: 115px;
   min-height: 1000px;
 
 }
+.NavigacioniBody{
+
+  background-color: #f0f0f0;
+  font-size: xx-large;
+  align-items: center;
+  padding-left: 50px;
+
+  padding-right: 30px;
+}
+  .KorpaNav{
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  .StavkeBodyKorpa {
+
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+  
+  }
+ .StavkaKorpa{
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 450px;
+  width: 200px;
+  margin-right: 10px;
+  margin: 10px;
+ }

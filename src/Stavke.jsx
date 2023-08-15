@@ -1,11 +1,11 @@
 import React from 'react'
 import Stavka from "./Stavka";
-const Stavke = ({ stavke }) => {
+const Stavke = ({ stavke ,onAdd, onRemove}) => {
 
   return (
-    <div class="StavkeBody">
+    <div className="StavkeBody">
       {stavke.map((stavka) => (
-        stavka.normalPrice - stavka.salePrice > 39 ? <Stavka stavka={stavka} /> : ""
+        stavka.normalPrice - stavka.salePrice > 29.99 ? <Stavka key = {stavka.id} stavka={stavka} onAdd={onAdd} onRemove={onRemove} /> : ""
       ))}
 
     </div>
